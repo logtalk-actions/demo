@@ -24,7 +24,7 @@ jobs:
           fetch-depth: 1
       - name: Generate the application diagrams
         run: |
-          swilgt -g "{loader,diagrams(loader)},entity_diagram::file(aliases)" -t halt
+          swilgt -g "{loader,diagrams(loader)},diagrams::directory('.')" -t halt
           lgt2svg
           zip diagrams.zip *.svg
       - name: Upload diagrams
