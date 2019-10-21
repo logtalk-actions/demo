@@ -29,7 +29,7 @@ jobs:
           printf 'n\nAliases example\nPaulo Moura\n\n\n' | lgt2rst -s -t "Aliases example"
           make html
           cd _build/html
-          zip ../../../docs.zip *.html
+          zip -r ../../../docs.zip *
       - name: Upload documentation
         uses: actions/upload-artifact@master
         with:
