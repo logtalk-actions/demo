@@ -26,17 +26,9 @@ jobs:
         run: |
           swilgt -g "{loader,diagrams(loader)},entity_diagram::file(aliases)" -t halt
           lgt2svg
+          zip diagrams.zip *.svg
       - name: Upload diagrams
         uses: actions/upload-artifact@master
         with:
-          name: aliases_entity_diagram
-          path: aliases_entity_diagram.svg
-      - name: Copy diagrams
-        run: |
-          mkdir -p public
-          cp aliases_entity_diagram.svg public/
-      - name: Publish code coverage report
-        uses: maxheld83/ghpages@v0.2.1
-        env:
-          BUILD_DIR: public
-          GH_PAT: ${{ secrets.GH_PAT }}
+          name: diagrams
+          path: diagrams.zip
