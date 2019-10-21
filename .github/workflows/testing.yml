@@ -36,3 +36,12 @@ jobs:
         with:
           name: code-coverage-report
           path: coverage_report.html
+      - name: Copy code coverage report
+        run: |
+          mkdir public
+          cp coverage_report.html public/
+      - name: Publish code coverage report
+        uses: maxheld83/ghpages@v0.2.1
+        env:
+          BUILD_DIR: public
+        secrets: [GH_PAT]
