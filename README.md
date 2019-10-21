@@ -13,4 +13,4 @@ The [`diagrams`](https://github.com/logtalk-actions/demo/blob/master/.github/wor
 
 ![](https://github.com/logtalk-actions/demo/workflows/Documenting/badge.svg)
 
-The [`diagrams`](https://github.com/logtalk-actions/demo/blob/master/.github/workflows/documenting.yml) workflow makes available the application documentation in HTML format. Navigate to the commits list, select the latest successful commit, and go into the build details (green check mark) to download the documentation.
+The [`documenting`](https://github.com/logtalk-actions/demo/blob/master/.github/workflows/documenting.yml) workflow makes available the application documentation in HTML format using Sphinx. Navigate to the commits list, select the latest successful commit, and go into the build details (green check mark) to download the documentation.
