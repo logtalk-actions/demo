@@ -1,9 +1,9 @@
-name: Testing
+name: Workflow
 
-on: []
+on: [push]
 
 jobs:
-  test:
+  workflow:
     runs-on: ubuntu-latest
     env:
       LOGTALKHOME: /usr/local/share/logtalk
@@ -26,14 +26,26 @@ jobs:
         run: |
           logtalk_tester -f tap -c xml
           xsltproc --stringparam prefix work/$(basename $GITHUB_REPOSITORY)/$(basename $GITHUB_REPOSITORY)/ --stringparam url https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA -o coverage_report.html coverage_report.xml
-      - name: Commit TAP and code coverage reports
+      - name: Regenerate the application documentation
+        run: |
+          swilgt -g "{loader,lgtdoc(loader)},lgtdoc::directory('.')" -t halt
+          cd xml_docs
+          printf 'n\nAliases example\nPaulo Moura\n\n\n' | lgt2rst -s -t "Aliases example"
+          make html
+      - name: Regenerate the application diagrams
+        run: |
+          swilgt -g "{loader,diagrams(loader)},diagrams::directory('.')" -t halt
+          lgt2svg
+      - name: Commit updates
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          mv tap_report.txt docs/
-          mv coverage_report.html docs/
+          mv tap_report.txt docs/reports/
+          mv coverage_report.html docs/reports/
+          mv _build/html docs/api
+          mv *.svg docs/diagrams/
           git add docs/*
-          git commit -m "Update testing reports"
+          git commit -m "Update testing reports, documentation, and diagrams"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:

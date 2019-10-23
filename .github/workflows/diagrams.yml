@@ -1,6 +1,6 @@
 name: Diagrams
 
-on: [push]
+on: []
 
 jobs:
   diagrams:

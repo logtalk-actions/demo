@@ -1,6 +1,6 @@
 name: Documenting
 
-on: [push]
+on: []
 
 jobs:
   documenting:

@@ -3,14 +3,14 @@
 Demonstration repository for Logtalk actions and workflows.
 The source files are a copy of the `aliases` example in the Logtalk distribution.
 
-![](https://github.com/logtalk-actions/demo/workflows/Testing/badge.svg)
+![](https://github.com/logtalk-actions/demo/workflows/Workflow/badge.svg)
 
-The [`testing`](https://github.com/logtalk-actions/demo/blob/master/.github/workflows/testing.yml) workflow publishes a TAP report and a code coverage report at [https://logtalk-actions.github.io/demo/](https://logtalk-actions.github.io/demo/).
+The [`workflow`](https://github.com/logtalk-actions/demo/blob/master/.github/workflows/testing.yml) performs the following tasks:
 
-![](https://github.com/logtalk-actions/demo/workflows/Diagrams/badge.svg)
+- runs the tests and publishes TAP and code coverage reports
+- (re)generates API documentation
+- (re)generates diagrams
 
-The [`diagrams`](https://github.com/logtalk-actions/demo/blob/master/.github/workflows/diagrams.yml) workflow makes available an application entity diagram in SVG format. Navigate to the commits list, select the latest successful commit, and go into the build details (green check mark) to download the diagrams.
+All results are published at [https://logtalk-actions.github.io/demo/](https://logtalk-actions.github.io/demo/).
 
-![](https://github.com/logtalk-actions/demo/workflows/Documenting/badge.svg)
-
-The [`documenting`](https://github.com/logtalk-actions/demo/blob/master/.github/workflows/documenting.yml) workflow makes available the application documentation in HTML format using Sphinx. Navigate to the commits list, select the latest successful commit, and go into the build details (green check mark) to download the documentation.
+This workflow customizes and combines the individual steps of the testing, documenting, and diagramming sample workflows available at [https://github.com/logtalk-actions](https://github.com/logtalk-actions). The main reason to combine the workflows instead of running them individually and concurrently is to minimize processing requirements by setting up Logtalk and the used Prolog backend only once.
