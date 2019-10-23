@@ -28,13 +28,12 @@ jobs:
           xsltproc --stringparam prefix work/$(basename $GITHUB_REPOSITORY)/$(basename $GITHUB_REPOSITORY)/ --stringparam url https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA -o coverage_report.html coverage_report.xml
       - name: Commit TAP and code coverage reports
         run: |
-          ls
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           mv tap_report.txt docs/
           mv coverage_report.html docs/
-          git config --local user.email "you@example.com"
-          git config --local user.name $GITHUB_ACTOR
-          git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
-          git pull github ${GITHUB_REF} --ff-only
           git add docs/*
-          git commit -m "Update testing reports"
-          git push github HEAD:${GITHUB_REF}
+      - name: Push changes
+            uses: ad-m/github-push-action@master
+            with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
