@@ -8,6 +8,8 @@ jobs:
     env:
       LOGTALKHOME: /usr/local/share/logtalk
       LOGTALKUSER: /home/runner/logtalk
+      DOC_TITLE: "Aliases example"
+      DOC_AUTHOR: "Paulo Moura"
     steps:
       - name: Install SWI-Prolog backend
         uses: logtalk-actions/setup-swi-prolog@master
@@ -30,7 +32,7 @@ jobs:
         run: |
           swilgt -g "{loader,lgtdoc(loader)},lgtdoc::directory('.')" -t halt
           cd xml_docs
-          printf 'n\nAliases example\nPaulo Moura\n\n\n' | lgt2rst -s -t "Aliases example"
+          printf "n\n$DOC_TITLE\n$DOC_AUTHOR\n\n\n" | lgt2rst -s -t "$DOC_TITLE"
           make html
       - name: Regenerate the application diagrams
         run: |
