@@ -1,0 +1,61 @@
+
+.. _predicate_index:
+
+Predicates
+===============
+
+This index lists all entities *declaring* a given predicate. To load an entity providing the predicate that you want to call, always load the library that includes it using the goal ``logtalk_load(library_name(loader))`` instead of loading just the entity. The library loader file ensures that all the required dependencies are also loaded.
+
+
+
+``area/1``
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+
+
+* :ref:`ellipse(A,B) <ellipse/2::area/1>`
+* :ref:`rectangle(A,B) <rectangle/2::area/1>`
+
+``height/1``
+------------
+
+.. toctree::
+   :maxdepth: 1
+
+
+
+* :ref:`rectangle(A,B) <rectangle/2::height/1>`
+
+``rx/1``
+--------
+
+.. toctree::
+   :maxdepth: 1
+
+
+
+* :ref:`ellipse(A,B) <ellipse/2::rx/1>`
+
+``ry/1``
+--------
+
+.. toctree::
+   :maxdepth: 1
+
+
+
+* :ref:`ellipse(A,B) <ellipse/2::ry/1>`
+
+``width/1``
+-----------
+
+.. toctree::
+   :maxdepth: 1
+
+
+
+* :ref:`rectangle(A,B) <rectangle/2::width/1>`
+

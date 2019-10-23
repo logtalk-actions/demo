@@ -1,0 +1,23 @@
+TAP version 13
+ok aliases_01 @ tests
+ok aliases_02 @ tests
+ok aliases_03 @ tests
+ok aliases_04 @ tests
+ok aliases_05 @ tests
+ok aliases_06 @ tests
+ok aliases_07 @ tests
+ok aliases_08 @ tests
+ok aliases_09 @ tests
+ok aliases_10 @ tests
+ok aliases_11 @ tests
+ok aliases_12 @ tests
+ok aliases_13 @ tests
+ok aliases_14 @ tests
+ok aliases_15 @ tests
+ok aliases_16 @ tests
+ok aliases_17 @ tests
+1..17
+  ---
+  coverage: 66.66666666666667%
+  ...
+

@@ -1,0 +1,46 @@
+.. index:: square(A)
+.. _square/1:
+
+.. rst-class:: right
+
+**object**
+
+``square(A)``
+=============
+
+| **Compilation flags:**
+|    ``static, context_switching_calls``
+
+
+| **Extends:**
+|    ``public`` :ref:`rectangle(A,A) <rectangle/2>`
+| **Aliases:**
+|    ``rectangle(A,B)`` ``width/1`` as ``side/1``
+
+| **Remarks:**
+|    (none)
+
+.. contents::
+   :local:
+   :backlinks: top
+
+Public predicates
+-----------------
+
+(see entity ancestors)
+
+Protected predicates
+--------------------
+
+(see entity ancestors)
+
+Private predicates
+------------------
+
+(see entity ancestors)
+
+Operators
+---------
+
+(none)
+

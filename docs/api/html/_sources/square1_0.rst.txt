@@ -1,0 +1,44 @@
+.. index:: square1
+.. _square1/0:
+
+.. rst-class:: right
+
+**object**
+
+``square1``
+===========
+
+| **Compilation flags:**
+|    ``static, context_switching_calls``
+
+
+| **Extends:**
+|    ``public`` :ref:`square(1) <square/1>`
+
+| **Remarks:**
+|    (none)
+
+.. contents::
+   :local:
+   :backlinks: top
+
+Public predicates
+-----------------
+
+(see entity ancestors)
+
+Protected predicates
+--------------------
+
+(see entity ancestors)
+
+Private predicates
+------------------
+
+(see entity ancestors)
+
+Operators
+---------
+
+(none)
+
