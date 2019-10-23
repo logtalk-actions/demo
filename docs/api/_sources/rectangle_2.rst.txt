@@ -1,0 +1,91 @@
+.. index:: rectangle(A，B)
+.. _rectangle/2:
+
+.. rst-class:: right
+
+**object**
+
+``rectangle(A,B)``
+==================
+
+| **Compilation flags:**
+|    ``static, context_switching_calls``
+
+
+| **Dependencies:**
+|   (none)
+
+
+| **Remarks:**
+|    (none)
+
+.. contents::
+   :local:
+   :backlinks: top
+
+Public predicates
+-----------------
+
+.. raw:: html
+
+   <div id="width/1"> </div>
+
+.. index:: width/1
+.. _rectangle/2::width/1:
+
+``width/1``
+^^^^^^^^^^^
+
+| **Compilation flags:**
+|    ``static``
+
+
+------------
+
+.. raw:: html
+
+   <div id="height/1"> </div>
+
+.. index:: height/1
+.. _rectangle/2::height/1:
+
+``height/1``
+^^^^^^^^^^^^
+
+| **Compilation flags:**
+|    ``static``
+
+
+------------
+
+.. raw:: html
+
+   <div id="area/1"> </div>
+
+.. index:: area/1
+.. _rectangle/2::area/1:
+
+``area/1``
+^^^^^^^^^^
+
+| **Compilation flags:**
+|    ``static``
+
+
+------------
+
+Protected predicates
+--------------------
+
+(none)
+
+Private predicates
+------------------
+
+(none)
+
+Operators
+---------
+
+(none)
+

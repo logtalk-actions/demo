@@ -1,0 +1,24 @@
+
+.. _directory_index:
+
+Directories
+===============
+
+To load an entity, always load the library that includes it using the goal ``logtalk_load(library_name(loader))`` instead of using its path. The library loader file ensures that all the required dependencies are also loaded.
+
+
+
+``work/demo/demo/``
+-------------------
+
+.. toctree::
+   :maxdepth: 1
+
+
+
+   circle(A) <circle_1>
+   ellipse(A,B) <ellipse_2>
+   rectangle(A,B) <rectangle_2>
+   square(A) <square_1>
+   square1 <square1_0>
+

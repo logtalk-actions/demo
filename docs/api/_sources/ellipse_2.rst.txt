@@ -1,0 +1,91 @@
+.. index:: ellipse(A，B)
+.. _ellipse/2:
+
+.. rst-class:: right
+
+**object**
+
+``ellipse(A,B)``
+================
+
+| **Compilation flags:**
+|    ``static, context_switching_calls``
+
+
+| **Dependencies:**
+|   (none)
+
+
+| **Remarks:**
+|    (none)
+
+.. contents::
+   :local:
+   :backlinks: top
+
+Public predicates
+-----------------
+
+.. raw:: html
+
+   <div id="rx/1"> </div>
+
+.. index:: rx/1
+.. _ellipse/2::rx/1:
+
+``rx/1``
+^^^^^^^^
+
+| **Compilation flags:**
+|    ``static``
+
+
+------------
+
+.. raw:: html
+
+   <div id="ry/1"> </div>
+
+.. index:: ry/1
+.. _ellipse/2::ry/1:
+
+``ry/1``
+^^^^^^^^
+
+| **Compilation flags:**
+|    ``static``
+
+
+------------
+
+.. raw:: html
+
+   <div id="area/1"> </div>
+
+.. index:: area/1
+.. _ellipse/2::area/1:
+
+``area/1``
+^^^^^^^^^^
+
+| **Compilation flags:**
+|    ``static``
+
+
+------------
+
+Protected predicates
+--------------------
+
+(none)
+
+Private predicates
+------------------
+
+(none)
+
+Operators
+---------
+
+(none)
+

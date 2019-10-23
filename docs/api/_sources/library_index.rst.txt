@@ -1,0 +1,24 @@
+
+.. _library_index:
+
+Libraries
+=============
+
+To load any library, use the goal ``logtalk_load(library_name(loader))``. To run the library tests, use the goal ``logtalk_load(library_name(tester))``.
+
+
+
+``startup``
+-----------
+
+.. toctree::
+   :maxdepth: 1
+
+
+
+   circle(A) <circle_1>
+   ellipse(A,B) <ellipse_2>
+   rectangle(A,B) <rectangle_2>
+   square(A) <square_1>
+   square1 <square1_0>
+

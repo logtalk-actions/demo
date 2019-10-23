@@ -10,7 +10,7 @@
 <title>demo</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-325 381,-325 381,4 -4,4"/>
 <text text-anchor="start" x="8" y="-18" font-family="Courier,monospace" font-size="10.00" fill="#696969">File load diagram for directory /home/runner/work/demo/demo/</text>
-<text text-anchor="start" x="8" y="-7" font-family="Courier,monospace" font-size="10.00" fill="#696969">Generated on 2019/10/23, 09:14</text>
+<text text-anchor="start" x="8" y="-7" font-family="Courier,monospace" font-size="10.00" fill="#696969">Generated on 2019/10/23, 09:31</text>
 <g id="clust1" class="cluster">
 <title>cluster_directory_demo</title>
 <g id="a_clust1"><a xlink:title="/home/runner/work/demo/demo/">
