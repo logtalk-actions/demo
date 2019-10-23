@@ -42,7 +42,7 @@ jobs:
           git config --local user.name "GitHub Action"
           mv tap_report.txt docs/reports/
           mv coverage_report.html docs/reports/
-          mv xml_docs/_build/html docs/api
+          mv xml_docs/_build/html/* docs/api/
           mv *.svg docs/diagrams/
           git add docs/*
           git commit -m "Update testing reports, documentation, and diagrams"
