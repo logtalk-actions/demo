@@ -33,6 +33,7 @@ jobs:
           mv tap_report.txt docs/
           mv coverage_report.html docs/
           git add docs/*
+          git commit -m "Update testing reports"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
