@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       LOGTALKHOME: /usr/local/share/logtalk
-      LOGTALKUSER: ${{ HOME }}/logtalk
+      LOGTALKUSER: $HOME/logtalk
       DOC_TITLE: "Aliases example"
       DOC_AUTHOR: "Paulo Moura"
     steps:
