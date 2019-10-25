@@ -5,9 +5,6 @@ on: [push]
 jobs:
   workflow:
     runs-on: ubuntu-latest
-    env:
-      DOC_TITLE: "Aliases example"
-      DOC_AUTHOR: "Paulo Moura"
     steps:
       - name: Install SWI-Prolog backend
         uses: logtalk-actions/setup-swi-prolog@master
@@ -17,7 +14,7 @@ jobs:
       - name: Install Logtalk
         uses: logtalk-actions/setup-logtalk@master
         with:
-          logtalk-version: latest
+          logtalk-version: git
       - name: Checkout Logtalk application to be tested
         uses: actions/checkout@v1
         with:
@@ -30,7 +27,7 @@ jobs:
         run: |
           swilgt -g "{loader,lgtdoc(loader)},lgtdoc::directory('.')" -t halt
           cd xml_docs
-          printf "n\n$DOC_TITLE\n$DOC_AUTHOR\n\n\n" | lgt2rst -s -t "$DOC_TITLE"
+          lgt2rst -s -- -q -p "Aliases example" -a "Paulo Moura" -v "3.14"
           make html
       - name: Regenerate the application diagrams
         run: |
