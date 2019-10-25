@@ -31,7 +31,7 @@ jobs:
           make html
       - name: Regenerate the application diagrams
         run: |
-          swilgt -g "{loader,diagrams(loader)},diagrams::directory('.')" -t halt
+          swilgt -g "{loader,diagrams(loader)},diagrams::directory('.',[omit_path_prefixes(['/home/runner/work/demo'])])" -t halt
           lgt2svg
       - name: Commit updates
         run: |
