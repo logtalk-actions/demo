@@ -27,11 +27,11 @@ jobs:
         run: |
           swilgt -g "{loader,lgtdoc(loader)},lgtdoc::directory('.')" -t halt
           cd xml_docs
-          lgt2rst -s -- -q -p "Aliases example" -a "Paulo Moura" -v "3.14"
+          lgt2rst -s -- -q -p "Aliases example" -a "Paulo Moura" -v "Version 3.14"
           make html
       - name: Regenerate the application diagrams
         run: |
-          swilgt -g "{loader,diagrams(loader)},diagrams::directory(aliases,'.',[omit_path_prefixes(['/home/runner/work/demo'])])" -t halt
+          swilgt -g "{loader,diagrams(loader)},diagrams::directory(aliases,'.',[omit_path_prefixes(['$GITHUB_WORKSPACE'])])" -t halt
           lgt2svg
       - name: Commit updates
         run: |
