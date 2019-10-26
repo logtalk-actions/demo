@@ -9,19 +9,16 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(76 1000)">
 <title>aliases</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-928 277,-928 277,4 -4,4"/>
-<text text-anchor="start" x="8" y="-18" font-family="Courier,monospace" font-size="10.00" fill="#696969">Inheritance diagram for directory demo/</text>
-<text text-anchor="start" x="8" y="-7" font-family="Courier,monospace" font-size="10.00" fill="#696969">Generated on 2019/10/25, 21:53</text>
+<text text-anchor="start" x="8" y="-18" font-family="Courier,monospace" font-size="10.00" fill="#696969">Inheritance diagram</text>
+<text text-anchor="start" x="8" y="-7" font-family="Courier,monospace" font-size="10.00" fill="#696969">Generated on 2019/10/26, 09:13</text>
 <g id="clust1" class="cluster">
 <title>cluster_directory_aliases</title>
-<g id="a_clust1"><a xlink:title="demo/">
 <path fill="#f5f5f5" stroke="#696969" d="M20,-38C20,-38 253,-38 253,-38 259,-38 265,-44 265,-50 265,-50 265,-904 265,-904 265,-910 259,-916 253,-916 253,-916 20,-916 20,-916 14,-916 8,-910 8,-904 8,-904 8,-50 8,-50 8,-44 14,-38 20,-38"/>
-<text text-anchor="start" x="20.5" y="-48.5" font-family="Courier,monospace" font-size="10.00" fill="#696969">demo/</text>
-</a>
-</g>
+<text text-anchor="start" x="20.5" y="-48.5" font-family="Courier,monospace" font-size="10.00" fill="#696969">./</text>
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_file_/home/runner/work/demo/demo/aliases.lgt</title>
-<g id="a_clust3"><a xlink:title="demo/aliases.lgt">
+<g id="a_clust3"><a xlink:title="aliases.lgt">
 <path fill="#fffafa" stroke="#696969" d="M30,-75C30,-75 243,-75 243,-75 249,-75 255,-81 255,-87 255,-87 255,-894 255,-894 255,-900 249,-906 243,-906 243,-906 30,-906 30,-906 24,-906 18,-900 18,-894 18,-894 18,-87 18,-87 18,-81 24,-75 30,-75"/>
 <text text-anchor="start" x="30.5" y="-85.5" font-family="Courier,monospace" font-size="10.00" fill="#696969">aliases.lgt</text>
 </a>
