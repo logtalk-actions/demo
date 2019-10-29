@@ -19,9 +19,11 @@ jobs:
         uses: actions/checkout@v1
         with:
           fetch-depth: 1
+      - name: Define environment variable for workflow exit
+        run: ::set-env name={EXIT}::{0}
       - name: Run the application tests
         run: |
-          logtalk_tester -f xunit -c xml
+          logtalk_tester -f xunit -c xml || EXIT=$?
           xunit-viewer --results=xunit_report.xml --output=xunit_report.html
           xsltproc --stringparam prefix work/$(basename $GITHUB_REPOSITORY)/$(basename $GITHUB_REPOSITORY)/ --stringparam url https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA -o coverage_report.html coverage_report.xml
       - name: Regenerate the application documentation
@@ -50,3 +52,5 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Set workflow exit status
+        run: exit $EXIT
