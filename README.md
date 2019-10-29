@@ -7,7 +7,7 @@ The source files are a copy of the `aliases` example in the Logtalk distribution
 
 The [`workflow`](https://github.com/logtalk-actions/demo/blob/master/.github/workflows/workflow.yml) performs the following tasks:
 
-- runs the tests and publishes TAP and code coverage reports
+- runs the tests and publishes xUnit and code coverage reports
 - (re)generates API documentation
 - (re)generates file loading and entity diagrams
 
