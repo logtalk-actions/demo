@@ -21,7 +21,8 @@ jobs:
           fetch-depth: 1
       - name: Run the application tests
         run: |
-          logtalk_tester -f tap -c xml
+          logtalk_tester -f xunit -c xml
+          xunit-viewer --results=xunit_report.xml --output=xunit_report.html
           xsltproc --stringparam prefix work/$(basename $GITHUB_REPOSITORY)/$(basename $GITHUB_REPOSITORY)/ --stringparam url https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA -o coverage_report.html coverage_report.xml
       - name: Regenerate the application documentation
         run: |
@@ -37,7 +38,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          mv tap_report.txt docs/reports/
+          mv xunit_report.html docs/reports/
           mv coverage_report.html docs/reports/
           rm -rf docs/api/*
           mv xml_docs/_build/html/* docs/api/
