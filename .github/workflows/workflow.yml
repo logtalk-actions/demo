@@ -9,8 +9,8 @@ jobs:
       - name: Install SWI-Prolog backend
         uses: logtalk-actions/setup-swi-prolog@master
         with:
-          swipl-branch: stable
-          swipl-version: latest
+          swi-prolog-branch: stable
+          swi-prolog-version: latest
       - name: Install Logtalk
         uses: logtalk-actions/setup-logtalk@master
         with:
@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v1
         with:
           fetch-depth: 1
-      - name: Define environment variable for workflow exit
+      - name: Define environment variable for the test results
         run: echo "::set-env name=EXIT::0"
       - name: Run the application tests
         run: |
@@ -52,5 +52,5 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Set workflow exit status
+      - name: Set workflow exit status after the test results
         run: exit $EXIT
