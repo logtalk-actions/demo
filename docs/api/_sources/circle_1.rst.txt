@@ -20,6 +20,9 @@
 | **Remarks:**
 |    (none)
 
+| **Inherited public predicates:**
+|     :ref:`ellipse/2::area/1`  :ref:`ellipse/2::rx/1`  :ref:`ellipse/2::ry/1`  
+
 .. contents::
    :local:
    :backlinks: top
@@ -27,17 +30,17 @@
 Public predicates
 -----------------
 
-(see entity ancestors)
+(no local declarations; see entity ancestors if any)
 
 Protected predicates
 --------------------
 
-(see entity ancestors)
+(no local declarations; see entity ancestors if any)
 
 Private predicates
 ------------------
 
-(see entity ancestors)
+(no local declarations; see entity ancestors if any)
 
 Operators
 ---------

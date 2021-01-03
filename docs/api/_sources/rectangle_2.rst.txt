@@ -19,6 +19,9 @@
 | **Remarks:**
 |    (none)
 
+| **Inherited public predicates:**
+|    (none)
+
 .. contents::
    :local:
    :backlinks: top
@@ -28,13 +31,13 @@ Public predicates
 
 .. raw:: html
 
-   <div id="area/1"> </div>
+   <div id="width/1"> </div>
 
-.. index:: area/1
-.. _rectangle/2::area/1:
+.. index:: width/1
+.. _rectangle/2::width/1:
 
-``area/1``
-^^^^^^^^^^
+``width/1``
+^^^^^^^^^^^
 
 | **Compilation flags:**
 |    ``static``
@@ -60,13 +63,13 @@ Public predicates
 
 .. raw:: html
 
-   <div id="width/1"> </div>
+   <div id="area/1"> </div>
 
-.. index:: width/1
-.. _rectangle/2::width/1:
+.. index:: area/1
+.. _rectangle/2::area/1:
 
-``width/1``
-^^^^^^^^^^^
+``area/1``
+^^^^^^^^^^
 
 | **Compilation flags:**
 |    ``static``

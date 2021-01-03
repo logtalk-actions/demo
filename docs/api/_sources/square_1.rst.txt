@@ -20,6 +20,9 @@
 | **Remarks:**
 |    (none)
 
+| **Inherited public predicates:**
+|     :ref:`rectangle/2::area/1`  :ref:`rectangle/2::height/1`  :ref:`rectangle/2::width/1`  
+
 .. contents::
    :local:
    :backlinks: top
@@ -27,17 +30,17 @@
 Public predicates
 -----------------
 
-(see entity ancestors)
+(no local declarations; see entity ancestors if any)
 
 Protected predicates
 --------------------
 
-(see entity ancestors)
+(no local declarations; see entity ancestors if any)
 
 Private predicates
 ------------------
 
-(see entity ancestors)
+(no local declarations; see entity ancestors if any)
 
 Operators
 ---------
